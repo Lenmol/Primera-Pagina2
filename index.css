@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&family=Poetsen+One&display=swap');
+
+body{
+    background-color: bisque;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+h1{
+    font-family: "Poetsen One", sans-serif;
+    
+}
+
+.entradas  {
+    
+}
+
+#chad{
+    color: darkred;
+    font-size: 30px;
+    font-family: "Honk", system-ui;
+}
+
+#texto{
+    text-shadow: 1px 1px 3px black;
+}
