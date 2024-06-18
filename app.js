@@ -23,5 +23,18 @@ function main() {
 
     document.querySelector("body").style.background = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
 
+    // consumir una api de pokemon
+    fetch("https://pokeapi.co/api/v2/pokemon/charmander").then(res => res.json()).then(
+        generarHtmlPokemon
+    )
+
+
+}
+
+function generarHtmlPokemon(info) {
+    const body = document.querySelector("body");
+    console.log(info.species.name);
+    body.innerHTML += `<p> ${info.species.name}</p>`;
+    body.innerHTML += `<img src="${info.sprites.front_default}" alt=${info.species.name}>`;
 }
 
